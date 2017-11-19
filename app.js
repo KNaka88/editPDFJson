@@ -1,5 +1,5 @@
-const path = require('path'),
-  os = require('os'),
+// initialize
+const
   ApiBuilder = require('claudia-api-builder'),
   fs = require('./fs-promise'),
   childProcess = require('./child-process-promise'),
