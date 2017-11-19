@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "pdf-editor-executor",
+    "name": "pdf-editor",
+    "region": "us-west-2"
+  },
+  "api": {
+    "id": "zm7muy8127",
+    "module": "app"
+  }
+}
