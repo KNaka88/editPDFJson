@@ -2,7 +2,6 @@
 const
   ApiBuilder = require('claudia-api-builder'),
   fs = require('./fs-promise'),
-  childProcess = require('./child-process-promise'),
   api = new ApiBuilder();
 
 module.exports = api;
