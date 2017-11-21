@@ -6,10 +6,9 @@
   "scripts": {
     "start": "claudia create --region us-west-2 --api-module app --use-local-dependencies",
     "test": "claudia test-lambda",
-    "update": "claudia update --use-local-dependencies"
   },
   "author": "Koji Nakagawa and Stella Huayhuaca",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "claudia-api-builder": "^2.5.1"
   }
