@@ -9,10 +9,13 @@ module.exports = api;
 
 api.post('/generate-pdf', (request) => {
   'use strict';
+  let jsonData = JSON.parse(request.rawBody);
+  const {base64, text, x, y} = jsonData;
+
   const HummusRecipe = require('hummus-recipe'),
         initialTempFile = `/tmp/${request.lambdaContext.awsRequestId}.pdf`,
         finishedTempFile = `/tmp/${(Date.now()).toString()}.pdf`,
-        data = new Buffer(request.body, 'base64');
+        data = new Buffer(base64);
   let result;
 
 
@@ -26,7 +29,7 @@ api.post('/generate-pdf', (request) => {
       return pdfDoc
         // edit detail
         .editPage(1)
-        .text('hello world', 10, 10)
+        .text(text, x, y)
         .endPage()
         .endPDF();
     })

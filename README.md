@@ -1,10 +1,10 @@
-# Lambda PDF Editor
+# Lambda PDF Editor JSON
 
 #### Koji Nakagawa & Stella Huayhuaca
 
 ## Description
-* This app accepts your PDF file and call AWS Lambda function and output additional text.
-* This function is suited for adding hard-coded text or image
+* This app accepts your JSON file that includes x/y positions, PDF Data (base64), and text. Then this will output edit ver of PDF.
+* [editPDFHelper](https://github.com/KNaka88/editPDFHelper) can help finish this process more easily
 
 
 ## Prerequisites
