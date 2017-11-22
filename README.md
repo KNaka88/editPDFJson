@@ -31,8 +31,8 @@ After configured successfully, you will see similar to below message in your com
 saving configuration
 {
   "lambda": {
-    "role": "lambdaPdfEditer-executor",
-    "name": "lambdaPdfEditer",
+    "role": "lambdaPdfEditerJson-executor",
+    "name": "lambdaPdfEditerJson",
     "region": "us-west-2"
   },
   "api": {
@@ -46,15 +46,10 @@ saving configuration
 You are now ready to use!
 
 ## How to Use?
-From your command line,
-
-```
-$ curl --request POST -H "Content-Type: application/pdf" -H "Accept: application/pdf" --data-binary "@your_input_file.pdf" https://your-id.execute-api.us-west-2.amazonaws.com/latest/generate-pdf > your_output_file_name.pdf
-```
-
+Please use [editPDFHelper](https://github.com/KNaka88/editPDFHelper)
 
 ## Technologies Used
-  * AWS Lambda, IAM
+  * AWS Lambda, IAM, API Gateway
   * Node.js
   * Claudia JS
   * Hummus
